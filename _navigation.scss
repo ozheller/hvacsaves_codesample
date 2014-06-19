@@ -1,0 +1,33 @@
+/**
+ * @file
+ * SMACSS Modules
+ *
+ * Adds styles for Navigation
+ *
+ * Additional useful selectors can be found in Zen's online documentation.
+ * https://drupal.org/node/1707736
+ */
+
+#navigation{
+    line-height: 2.66em;
+    margin-left: auto;
+    margin-top: 6.85em;
+    text-align: center;
+    width: 100%;
+    background: $nav_green;
+}
+  #main-menu{
+    li {
+      background: $nav_green;
+      border-color: #ffffff;
+      border-style: none solid solid;
+      border-width: 0 0 0 1px;
+      &:hover,
+      &.active-trail {background: $nav_blue;}
+      a {
+        color: #fff;
+        text-decoration:none;
+        padding: 0.83em 1.25em;
+      }
+    }
+  }

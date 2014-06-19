@@ -1,0 +1,127 @@
+/**
+ * @file
+ * SMACSS page
+ *
+ * Adds styles for page.
+ *
+ * Additional useful selectors can be found in Zen's online documentation.
+ * https://drupal.org/node/1707736
+ */
+
+#page{
+  background-color: #FFFFFF;
+}
+
+.front #content .node {
+  margin: 0 2.5em 0 3.214em;
+}
+
+#content-inner {
+	padding: 0.5em 0 0 0.5em;
+	overflow: hidden;
+}
+
+.region-sidebar-second {
+	.sidebar-inner {
+		margin: 0.5em;
+		background-color: $bg_gray;
+	}
+}
+//Page titles
+
+  .front .page__title, .section-about-instructors .page__title, .section-contact .page__title{
+    font-weight: normal;
+    color: #FFFFFF;
+    padding: 0.25em 1em;
+    background-color: $hr_blue;
+  }
+
+  .page-homeowners-find-contractor .page__title {
+    font-weight: normal;
+    color: #FFFFFF;
+    padding: 0.25em 1em;
+    background-color: $orange;
+  }
+  .section-register-training .page__title {
+    font-weight: normal;
+    color: #FFFFFF;
+    padding: 0.25em 1em;
+    background-color: $lt_green;
+  }
+
+//Accordion Styles
+  .ui-widget {
+    font-size: 1em;
+  }
+
+  .view-trainers-bios,
+  #block-views-class-listings-block-1,
+  #block-views-faq-consumers-block-1,
+  #block-views-faq-consumers-block-2{
+    padding-left: 2px;
+  }
+
+  .ui-accordion .views-row-odd {
+    background-color: $accordion_odd_gray;
+  }
+    .ui-accordion .views-row-even {
+    background-color: $accordion_even_blue;
+  }
+
+  .ui-accordion .ui-accordion-header {
+    background: none;
+    a{
+    color: blue;
+    text-decoration: underline;
+    }
+  }
+
+  .ui-accordion a{
+      color: blue;
+      text-decoration: underline;
+    }
+  .ui-accordion-content-active{
+    border: none;
+  }
+
+  .ui-state-default{
+    border: none;
+    border-radius: 0px;
+    a{
+      margin: -1px 0px 0px -1px;
+    }
+  }
+
+  .ui-state-active{
+    border-radius: 0px;
+    border: none;
+      a{
+        background: #FFFFFF;
+      }
+  }
+
+//FAQ Accordion styles
+  .section-faqs .ui-accordion, .section-register-training .ui-accordion{
+    font-size: 1em;
+    .ui-accordion-content-active{
+      padding-top: 0;
+      p {
+        margin: 0;
+        padding-bottom: 0px;
+      }
+    }
+  }
+
+//Instructor Accordion
+  .view-trainers-bios .ui-accordion-content{
+    margin-top: -9px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-radius: 0px;
+  }
+
+//Bold label for Contractors on Find contractors view.
+.views-label-field-save-contractor{
+  font-weight: bold;
+}

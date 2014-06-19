@@ -1,0 +1,181 @@
+/**
+ * @file
+ * SMACSS Blocks
+ *
+ * Adds Block styling.
+ *
+ * Additional useful selectors can be found in Zen's online documentation.
+ * https://drupal.org/node/1707736
+ */
+
+
+//Header text block
+  #block-block-10{
+    color: #14769D;
+    font-size: 0.8em;
+    margin-top: 50px;
+    line-height: normal;
+    text-align: right;
+      img {
+        margin-left: 2em;
+      }
+  }
+
+//Frontpage content blocks, Green and Orange.
+  #block-block-5,
+  #block-block-6 {
+    float: left;
+    color: #FFFFFF;
+    min-height: 211px;
+    width: 45%;
+    h2 {text-align: center;}
+    .content {
+      font-size: 0.9em;
+      padding: 10px 30px;
+      a {
+        color: #fff;
+      }
+    }
+    .contractors-highlight,
+    .homeowners-highlight {
+      background-position: 0 bottom;
+      min-height: 211px;
+    }
+
+  }
+
+
+  #block-block-5{
+    background-color: $green;
+    margin-right: 5%;
+    margin-left: 2%;
+    .contractors-highlight {
+      background: url("../images/BLK03_green_small.jpg");
+    }
+  }
+  #block-block-6{
+    background-color: $orange;
+    .homeowners-highlight {
+      background: url("../images/BLK03_orange_small.jpg");
+    }
+  }
+
+//Sidebar on all pages.
+  .region-sidebar-second {
+    .block {
+      padding: 10px;
+      h2 {
+        color: $gray;
+        font-weight: normal;
+        margin-top: 0;
+        padding-left: 0.5em;
+      }
+      .content {
+        background-color: #FFFFFF;
+        padding: 0.5em;
+      }
+    }
+  }
+
+
+  #views_slideshow_cycle_main_SAVE_Sponsors-block_1{
+    height: 133px;
+    margin: 0 auto;
+    width: 185px;
+    padding: 10px;
+  }
+
+  #block-block-3 h1{
+    color: #2A8430;
+    margin: 0;
+  }
+  #block-block-3 p{
+    margin: 1em 0;
+  }
+
+  #quickfacts{
+      background-color: #FFFFFF;
+  }
+
+
+//Footer on all pages.
+  #footer{
+    //background: url("../images/footer_bg.png") repeat-y scroll 0 0 rgba(0, 0, 0, 0);
+    border-bottom: 3px solid #FFFFFF;
+    border-left: 0.5em solid #FFFFFF;
+    border-right: 0.5em solid #FFFFFF;
+    margin-top: 4px;
+    background: $bg_gray;
+      .block__title {
+            text-transform: uppercase;
+            font-size: 1em;
+            color: #000000;
+            font-weight: bold;
+            margin-top: 2em;
+      }
+    }
+  #footer .content ul{
+    padding: 0px;
+  }
+
+  .region-footer a{
+    color: $hr_blue;
+    text-decoration: none;
+  }
+
+  .region-footer ul{
+      list-style-image: none;
+      list-style-type: none;
+    a {
+      color: $hr_blue;
+      text-decoration: none;
+    }
+  }
+
+
+  //Footer Blocks
+    #block-block-1, #block-block-7, #block-block-8, #block-block-9{
+      float: left;
+      margin-left: 0px;
+      margin-bottom: 0;
+      padding-left: 15px;
+      font-size: 0.85em;
+      height: 22em;
+      border-color: #ffffff;
+      border-bottom: 1px solid #FFFFFF;
+    }
+
+    #block-block-1{
+      width: 230px;
+      border-right: 0.315em solid #FFFFFF;
+    }
+    //Social Links
+    ul.social-links a {
+      padding-left: 20px;
+    }
+      ul.social-links a.facebook{
+        background: url("../images/soc-facebook.gif") no-repeat scroll left center rgba(0, 0, 0, 0);
+      }
+      ul.social-links a.twitter{
+        background: url("../images/soc-twitter.gif") no-repeat scroll left center rgba(0, 0, 0, 0);
+      }
+      ul.social-links a.rss{
+        background: url("../images/soc-rss.gif") no-repeat scroll left center rgba(0, 0, 0, 0);
+      }
+
+    #block-block-8{
+      width: 214px;
+      border-left: 0.315em solid #FFFFFF;
+      border-right: 0.315em solid #FFFFFF;
+    }
+
+    #block-block-9{
+      width: 215px;
+      border-left: 0.315em solid #FFFFFF;
+      border-right: 0.315em solid #FFFFFF;
+    }
+
+    #block-block-7{
+      width: 209px;
+      border-left: 0.315em solid #FFFFFF;
+    }
